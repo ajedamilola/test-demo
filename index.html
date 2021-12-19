@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Bootstrap Demo</title>
+    <style>
+        #current_page {
+            border-bottom: 2px solid var(--bs-primary) !important;
+            color: var(--bs-primary) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation section -->
+    <nav class="navbar navbar-light bg-light navbar-expand-md">
+        <a class="navbar-brand" href="#">Dammy's Demo</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsedNavigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsedNavigation">
+            <ul class="navbar-nav">
+                <li class="navbar-item p-md-2 p-sm-0">
+                    <a class="nav-link" href="#" id="current_page">About</a>
+                </li>
+                <li class="navbar-item p-md-2 p-sm-0">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="navbar-item p-md-2 p-sm-0">
+                    <a class="nav-link" href="#">Our Program</a>
+                </li>
+                <li class="navbar-item p-md-2 p-sm-0">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="navbar-item p-md-2 p-sm-0">
+                    <a class="nav-link" href="#">Buy/Sell</a>
+                </li>
+                <li class="nav-item btn-nav-group">
+                    <button class="btn btn-outline-primary">Buy an Item</button>
+                    <button class="btn btn-primary">Submit Item</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Inro Banner Section-->
+    <div class="row inro-banner align-items-center reverse-sm">
+        <div class="col-md-6 col-sm-12 left ">
+            <h1 class="display-3 banner-header">
+                Buy & Sell Faster,<br>
+                Investing in Affilicited Marketing
+            </h1>
+            <p class="banner-header-description ">
+                Eiusmod aliquip ipsum est quis. Exercitation ex irure quis pariatur tempor eu. Culpa sint adipisicing
+                irure
+                laborum incididunt laborum enim cillum aliqua duis anim nisi anim. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Hic
+                velit quas molestiae maxime quidem consectetur? Ducimus facere neque, numquam dignissimos beatae
+                voluptatibus
+                cumque deserunt reiciendis corrupti ad est totam laudantium.
+            </p>
+            <button class="btn btn-outline-primary btn-lg ">Buy an Item</button>
+            <button class="btn btn-primary btn-lg mx-3">Submit Items</button>
+        </div>
+        <div class="col-md-6 col-sm-12 ">
+            <img src="demo/digital_marketing.jpg" alt="" class="w-100" />
+        </div>
+    </div>
+
+    <!--Featured Products section-->
+    <div class="section text-center my">
+        <h2 class="display-3 banner-header-lite">
+            Featured Products
+        </h2>
+        <p class="text-muted bbc text-start">Browse by Category</p>
+        <br>
+        <div class="padded">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
+                    <img src="demo/undraw_city_driver_re_0x5e.svg" class="border feature-img" alt="">
+                    Automobiles
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
+                    <img src="demo/undraw_mobile_devices_k1ok.svg" class="border feature-img" alt="">
+                    Phones & Tablets
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
+                    <img src="demo/undraw_monitor_iqpq.svg" class="border feature-img" alt="">
+                    Electronics
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
+                    <img src="demo/homeApliances.png" class="border feature-img" alt="">
+                    Furniture & Appliances
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
+                    <img src="demo/undraw_house_searching_re_stk8.svg" class="border feature-img" alt="">
+                    Real Estate
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
+                    <img src="demo/undraw_good_doggy_-4-wfq.svg" class="border feature-img" alt="">
+                    Animals & pets
+                </div>
+
+                <hr class="d-sm-none d-lg-block" />
+
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
+                    <img src="demo/undraw_contract_re_ves9.svg" class="border feature-img" alt="">
+                    Jobs
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
+                    <img src="demo/undraw_services_-5-tv9.svg" class="border feature-img" alt="">
+                    Services
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
+                    <img src="demo/undraw_education_f8ru.svg" class="border feature-img" alt="">
+                    Learning
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
+                    <img src="demo/undraw_map_dark_re_36sy.svg" class="border feature-img" alt="">
+                    Location & Events
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
+                    <img src="demo/undraw_jewelry_iima.svg" class="border feature-img" alt="">
+                    Fashion
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
+                    <img src="demo/undraw_yoga_-248-n.svg" class="border feature-img" alt="">
+                    Beauty & well being
+                </div>
+
+            </div>
+        </div>
+        <button class="btn btn-primary btn-lg">
+            View All Products
+        </button>
+    </div>
+
+    <!-- another Banner Section-->
+    <div class="my">
+        <div class="row inro-banner align-items-center">
+
+            <div class="col-md-6 col-sm-12">
+                <img src="demo/bussinessMan.jpg" alt="" class="w-100" />
+            </div>
+            <div class="col-md-6 col-sm-12 right">
+                <h1 class="display-4 banner-header">
+                    Be the best Aflicited Marketer you can be through us
+                </h1>
+                <br />
+                <p class="banner-header-description">
+                    Eiusmod aliquip ipsum est quis. Exercitation ex irure quis pariatur tempor eu. Culpa sint
+                    adipisicing
+                    irure
+                    laborum incididunt laborum enim
+                    velit quas molestiae maxime quidem consectetur? Ducimus facere neque, numquam dignissimos beatae
+                    voluptatibus
+                    cumque deserunt reiciendis corrupti ad est totam laudantium.
+
+                </p>
+                <br />
+                <button class="btn btn-outline-primary btn-lg p-7">Register Now</button>
+                <button class="btn btn-primary btn-lg mx-3 p-7">Submit Items</button>
+            </div>
+        </div>
+    </div>
+
+    <!--slidable latest products-->
+    <div class="my">
+        <div class="">
+            <h2 class="display-5 banner-header-lite mx-auto text-center">Latest Products</h2>
+            <p class="latest-products-intro text-center">
+                Irure sunt amet cillum veniam deserunt nisi. Excepteur enim eu excepteur anim laborum velit
+                nulla esse esse sit. Sint laboris non enim cillum eu voluptate dolore reprehenderit.
+            </p>
+
+            <!--SLide-->
+            <div style="padding: 50px 2%;">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+
+
+                        <div class="carousel-item active">
+                            <div class="row bg-blue round-edge px-3 justify-content-evenly w-100">
+
+                                <!--Single products badge-->
+                                <div class="col mx-3 row featured-product my-3 bg-white round-edge p-2 shadow-lg">
+                                    <div>
+                                        <div class="bg-success py-2 px-4 price-badge text-white d-inline rounded-3">
+                                            20,000
+                                        </div>
+                                        <img src="demo/unnamed.png" alt="" class="w-100">
+                                        <h2 class="text-primary latest-product-name my-4">Toyota Highlander 2025 model
+                                        </h2>
+                                        <p class="latest-products-description">
+                                            Dec 1st, 2021
+                                            <br />
+                                            Automobiles
+                                            <br />
+                                            Lagos
+
+                                        </p>
+                                        <div class="read-more my-3">
+                                            Read more
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!--End Product card-->
+
+
+                                <!--Single products badge-->
+                                <div class="col mx-3 row featured-product my-3 bg-white round-edge p-2 shadow-lg">
+                                    <div>
+                                        <div class="bg-success py-2 px-4 price-badge text-white d-inline rounded-3">
+                                            20,000
+                                        </div>
+                                        <img src="demo/unnamed.png" alt="" class="w-100">
+                                        <h2 class="text-primary latest-product-name my-4">Toyota Highlander 2025 model
+                                        </h2>
+                                        <p class="latest-products-description">
+                                            Dec 1st, 2021
+                                            <br />
+                                            Automobiles
+                                            <br />
+                                            Lagos
+
+                                        </p>
+                                        <div class="read-more my-3">
+                                            Read more
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!--End Product card-->
+
+
+                                <!--Single products badge-->
+                                <div class="col mx-3 row featured-product my-3 bg-white round-edge p-2 shadow-lg">
+                                    <div>
+                                        <div class="bg-success py-2 px-4 price-badge text-white d-inline rounded-3">
+                                            20,000
+                                        </div>
+                                        <img src="demo/unnamed.png" alt="" class="w-100">
+                                        <h2 class="text-primary latest-product-name my-4">Toyota Highlander 2025 model
+                                        </h2>
+                                        <p class="latest-products-description">
+                                            Dec 1st, 2021
+                                            <br />
+                                            Automobiles
+                                            <br />
+                                            Lagos
+
+                                        </p>
+                                        <div class="read-more my-3">
+                                            Read more
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!--End Product card-->
+
+
+                                <!--Single products badge-->
+                                <div class="col mx-3 row featured-product my-3 bg-white round-edge p-2 shadow-lg">
+                                    <div>
+                                        <div class="bg-success py-2 px-4 price-badge text-white d-inline rounded-3">
+                                            20,000
+                                        </div>
+                                        <img src="demo/unnamed.png" alt="" class="w-100">
+                                        <h2 class="text-primary latest-product-name my-4">Toyota Highlander 2025 model
+                                        </h2>
+                                        <p class="latest-products-description">
+                                            Dec 1st, 2021
+                                            <br />
+                                            Automobiles
+                                            <br />
+                                            Lagos
+
+                                        </p>
+                                        <div class="read-more my-3">
+                                            Read more
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!--End Product card-->
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ">
+                            <div class="row bg-blue round-edge px-3 justify-content-evenly w-100">
+
+                                <!--Single products badge-->
+                                <div class="col mx-3 row featured-product my-3 bg-white round-edge p-2 shadow-lg">
+                                    <div>
+                                        <div class="bg-success py-2 px-4 price-badge text-white d-inline rounded-3">
+                                            20,000
+                                        </div>
+                                        <img src="demo/unnamed.png" alt="" class="w-100">
+                                        <h2 class="text-primary latest-product-name my-4">Toyota Highlander 2025 model
+                                        </h2>
+                                        <p class="latest-products-description">
+                                            Dec 1st, 2021
+                                            <br />
+                                            Automobiles
+                                            <br />
+                                            Lagos
+
+                                        </p>
+                                        <div class="read-more my-3">
+                                            Read more
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!--End Product card-->
+
+
+                                <!--Single products badge-->
+                                <div class="col mx-3 row featured-product my-3 bg-white round-edge p-2 shadow-lg">
+                                    <div>
+                                        <div class="bg-success py-2 px-4 price-badge text-white d-inline rounded-3">
+                                            20,000
+                                        </div>
+                                        <img src="demo/unnamed.png" alt="" class="w-100">
+                                        <h2 class="text-primary latest-product-name my-4">Toyota Highlander 2025 model
+                                        </h2>
+                                        <p class="latest-products-description">
+                                            Dec 1st, 2021
+                                            <br />
+                                            Automobiles
+                                            <br />
+                                            Lagos
+
+                                        </p>
+                                        <div class="read-more my-3">
+                                            Read more
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!--End Product card-->
+
+
+                                <!--Single products badge-->
+                                <div class="col mx-3 row featured-product my-3 bg-white round-edge p-2 shadow-lg">
+                                    <div>
+                                        <div class="bg-success py-2 px-4 price-badge text-white d-inline rounded-3">
+                                            20,000
+                                        </div>
+                                        <img src="demo/unnamed.png" alt="" class="w-100">
+                                        <h2 class="text-primary latest-product-name my-4">Toyota Highlander 2025 model
+                                        </h2>
+                                        <p class="latest-products-description">
+                                            Dec 1st, 2021
+                                            <br />
+                                            Automobiles
+                                            <br />
+                                            Lagos
+
+                                        </p>
+                                        <div class="read-more my-3">
+                                            Read more
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!--End Product card-->
+
+
+                                <!--Single products badge-->
+                                <div class="col mx-3 row featured-product my-3 bg-white round-edge p-2 shadow-lg">
+                                    <div>
+                                        <div class="bg-success py-2 px-4 price-badge text-white d-inline rounded-3">
+                                            20,000
+                                        </div>
+                                        <img src="demo/unnamed.png" alt="" class="w-100">
+                                        <h2 class="text-primary latest-product-name my-4">Toyota Highlander 2025 model
+                                        </h2>
+                                        <p class="latest-products-description">
+                                            Dec 1st, 2021
+                                            <br />
+                                            Automobiles
+                                            <br />
+                                            Lagos
+
+                                        </p>
+                                        <div class="read-more my-3">
+                                            Read more
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!--End Product card-->
+
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <a data-bs-target="#carouselExampleIndicators" class="carousel-control-prev" data-bs-slide="prev"
+                        href="#">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a data-bs-target="#carouselExampleIndicators" class="carousel-control-next" data-bs-slide="next"
+                        href="#">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!--Another Banner Section-->
+    <div class="my">
+        <div class="row inro-banner align-items-center reverse-sm">
+            <div class="col-md-6 col-sm-12 left">
+                <h1 class="display-4 banner-header">
+                    Buy and sell products to reach larger audience through us
+                </h1>
+                <br />
+                <p class="banner-header-description">
+                    Eiusmod aliquip ipsum est quis. Exercitation ex irure quis pariatur tempor eu. Culpa sint
+                    adipisicing
+                    irure
+                    laborum incididunt laborum enim
+                    velit quas molestiae maxime quidem consectetur? Ducimus facere neque, numquam dignissimos beatae
+                    voluptatibus
+                    cumque deserunt reiciendis corrupti ad est totam laudantium.
+
+                </p>
+                <br />
+                <button class="btn btn-outline-primary btn-lg p-7">Submit Items</button>
+                <button class="btn btn-primary btn-lg mx-3 p-7">Explore Store</button>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="demo/marketer.jpg" alt="" class="w-100" />
+            </div>
+        </div>
+    </div>
+
+    <!--How to become a AFM-->
+    <div class="pa-m-right bg-blue w-100">
+        <h2 class="display-6 banner-header-lite text-center">
+            FAQ on how to be an affilicted marketer
+        </h2>
+        <br />
+        <!--One step to be an AFM-->
+        <div class="row my-5">
+            <div class="col-2" id="hw-am-1">
+                 <div class="tracer" id="line">
+                    |
+                </div>
+                <div class="bg-primary rounded-circle ratio-1x1 d-flex align-items-center justify-content-center text-white"
+                    style="width: 50px;height: 50px; z-index: 1050 !important;position: absolute;">
+                    1
+                </div>
+               
+            </div>
+            <div class="col-10 pad-center-sm">
+                <b class="banner-header-lite d-block" style="font-size: x-large !important;">
+                    Visit our website
+                </b>
+                <p class="text-muted my-4 mr-10 left" style="font-family: roboto;font-weight: 300;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis viverra curabitur odio cursus
+                    in felis. Enim, vulputate dui blandit turpis neque neque bibendum pretium mollis. Donec
+                    habitasse tempus, eget facilisis. Morbi semper volutpat lorem sed curabitur risus euismod.
+                </p>
+            </div>
+        </div>
+
+        <!--One step to be an AFM-->
+        <div class="row my-5">
+            <div class="col-2" id="hw-am-2">
+                
+                <div class="bg-primary rounded-circle ratio-1x1 d-flex align-items-center justify-content-center text-white"
+                    style="width: 50px;height: 50px;z-index: 1050 !important;position: absolute;">
+                    2
+                </div>
+            </div>
+            <div class="col-10 pad-center-sm">
+                <b class="banner-header-lite d-block left left" style="font-size: x-large !important;">
+                    Click the Submit item button
+                </b>
+                <p class="text-muted my-4 mr-10 left" style="font-family: roboto;font-weight: 300;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis viverra curabitur odio cursus in
+                    felis. Enim, vulputate dui blandit turpis neque neque bibendum pretium mollis.
+                </p>
+
+                <!--Sudo video-->
+                <div class="row align-items-center padded" style="margin-top: 50px !important;">
+                    <div class="col-md-4 col-sm-12">
+                        <img src="demo/bussinessManVidSudo.jpg" alt="" class="w-100 rounded-sig">
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <b class="banner-header-lite d-block left" style="font-size: large !important;">
+                            Watch a testimony of an affilicted marketer
+                        </b>
+                        <p class="text-muted my-4 left" style="font-family: roboto;font-weight: 300;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis viverra curabitur odio
+                            cursus in
+                            felis. Enim, vulputate dui blandit turpis neque neque bibendum pretium mollis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-2">
+                <div class="bg-primary rounded-circle ratio-1x1 d-flex align-items-center justify-content-center text-white"
+                    style="width: 50px;height: 50px;z-index: 1050 !important;position: absolute;">
+                    3
+                </div>
+            </div>
+           
+            <div class="col-10 pad-center-sm">
+                <b class="banner-header-lite d-block left" style="font-size: x-large !important;">
+                    Uplode the goods you wish to sell on our website
+                </b>
+                <p class="text-muted my-4 mr-10 left" style="font-family: roboto;font-weight: 300;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis viverra curabitur odio cursus in
+                    felis.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--Sign up for news letter-->
+    <div class="px-lg">
+        <h2 class="text-center banner-header-lite display-6">
+            If you would like to receive occucational updates from us
+        </h2>
+        <div class="bg-blue-darker my-5">
+            <div class="row align-items-stretch" style="height: 45px;">
+               
+                    <input class="bg-blue-darker form-control col-10 w-75 rounded-3" style="font-family: dm-sans;border: none;" type="text" placeholder="Enter email adress"/>
+               
+                    <button class="btn btn-primary col-2 w-25 rounded-3">Send</button>
+               
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="bg-dark">
+        <div style="padding: 70px 10%;">
+            <h3 class="text-white">
+                Damilola Demo
+            </h3>
+            <br />
+            <div class="row">
+                <div class="col-7">
+                    <h3 class="text-primary">
+                        U own it
+                    </h3>
+                    <p class="text-white" style="font-family: 'roboto';">
+                        If you would like <br>to receive occucational updates <br>from us
+                    </p>
+                </div>
+                
+                <div class="col">
+                    <h5 style="font-family: 'dm-sans';color: white;line-height: 20px;font-weight:300">
+                        Company
+                    </h5>
+                    <br>
+                    <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
+                       Product name
+                    </p>
+                    <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
+                        Product name
+                     </p>
+                     <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
+                        Product name
+                     </p>
+                    
+                </div>
+                <div class="col">
+    
+                    <h5 style="font-family: 'dm-sans';color: white;line-height: 20px;font-weight:300">
+                        Company
+                    </h5>
+                    <br>
+                    <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
+                       Product name
+                    </p>
+                    <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
+                        Product name
+                     </p>
+                     <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
+                        Product name
+                     </p>
+                </div>
+            </div>
+        </div>
+        
+        <hr  style="color: white;"/>
+        <div style="padding: 50px 0px;">
+            <p class="text-center text-white" style="font-family: 'roboto';font-size: larger;">
+                SOCIALS
+            </p>
+            <br>
+            <div class="row social-icons">
+                <div class="col" >
+                    <img src="icons/facebook.svg" alt="" class="icon">
+                </div>
+                <div class="col">
+                    <img src="icons/behance.svg" alt="" class="icon">
+                </div>
+                <div class="col">
+                    <img src="icons/pinterest.svg" alt="" class="icon">
+                </div>
+                <div class="col">
+                    <img src="icons/dribbble.svg" alt="" class="icon">
+                </div>
+                <div class="col">
+                    <img src="icons/twitter.svg" alt="" class="icon">
+                </div>
+                <div class="col">
+                    <img src="icons/linkedin.svg" alt="" class="icon">
+                </div>
+            </div>
+            <br />
+            <div class="copyright-text" style="margin-top: 60px;">
+                ©All Right Reserved By Aje Damilola
+            </span>
+        </div>
+    </footer>
+
+    <script>
+
+        var numberofTimesToDrawLine=2;
+        var height=0;
+        for (let i = 1; i <= numberofTimesToDrawLine; i++) {
+            var parent=document.getElementById("hw-am-"+i.toString()).clientHeight;
+            height+=(parent-(-50));
+        }
+        document.getElementById("line").style.height=height+"px";
+    </script>
+</body>
+
+</html>
