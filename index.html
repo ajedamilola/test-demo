@@ -9,6 +9,8 @@
     <script src="bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="aos/aos.css">
+    <script src="aos/aos.js"></script>
 
     <title>Bootstrap Demo</title>
     <style>
@@ -21,7 +23,7 @@
 
 <body>
     <!-- Navigation section -->
-    <nav class="navbar navbar-light bg-light navbar-expand-md">
+    <nav class="navbar navbar-light bg-light navbar-expand-md" data-aos="slide-down" data-aos-duration="800">
         <a class="navbar-brand" href="#">Dammy's Demo</a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsedNavigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,35 +56,38 @@
     <!-- Inro Banner Section-->
     <div class="row inro-banner align-items-center reverse-sm">
         <div class="col-md-6 col-sm-12 left ">
-            <h1 class="display-3 banner-header">
-                Buy & Sell Faster,<br>
+            <h1 class="display-3 banner-header" data-aos="fade-right" data-aos-duration="900" Buy & Sell Faster,<br>
                 Investing in Affilicited Marketing
             </h1>
-            <p class="banner-header-description ">
-                Eiusmod aliquip ipsum est quis. Exercitation ex irure quis pariatur tempor eu. Culpa sint adipisicing
-                irure
-                laborum incididunt laborum enim cillum aliqua duis anim nisi anim. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Hic
-                velit quas molestiae maxime quidem consectetur? Ducimus facere neque, numquam dignissimos beatae
-                voluptatibus
-                cumque deserunt reiciendis corrupti ad est totam laudantium.
-            </p>
-            <button class="btn btn-outline-primary btn-lg ">Buy an Item</button>
-            <button class="btn btn-primary btn-lg mx-3">Submit Items</button>
+            <div data-aos="fade-right" data-aos-duration="900" data-aos-delay="300">
+                <p class="banner-header-description ">
+                    Eiusmod aliquip ipsum est quis. Exercitation ex irure quis pariatur tempor eu. Culpa sint
+                    adipisicing
+                    irure
+                    laborum incididunt laborum enim cillum aliqua duis anim nisi anim. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Hic
+                    velit quas molestiae maxime quidem consectetur? Ducimus facere neque, numquam dignissimos beatae
+                    voluptatibus
+                    cumque deserunt reiciendis corrupti ad est totam laudantium.
+                </p>
+                <button class="btn btn-outline-primary btn-lg ">Buy an Item</button>
+                <button class="btn btn-primary btn-lg mx-3">Submit Items</button>
+            </div>
+
         </div>
-        <div class="col-md-6 col-sm-12 ">
+        <div class="col-md-6 col-sm-12 " data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-cubic">
             <img src="demo/digital_marketing.jpg" alt="" class="w-100" />
         </div>
     </div>
 
     <!--Featured Products section-->
     <div class="section text-center my">
-        <h2 class="display-3 banner-header-lite">
+        <h2 class="display-3 banner-header-lite" data-aos="zoom-in-up" data-aos-duration="400" data-aos-easing="linear">
             Featured Products
         </h2>
         <p class="text-muted bbc text-start">Browse by Category</p>
         <br>
-        <div class="padded">
+        <div class="padded" data-aos="fade-left" data-aos-duration="1200">
             <div class="row">
                 <div class="col-lg-2 col-md-4 col-sm-6 text-center feature-category">
                     <img src="demo/undraw_city_driver_re_0x5e.svg" class="border feature-img" alt="">
@@ -158,14 +163,14 @@
         <div class="row inro-banner align-items-center">
 
             <div class="col-md-6 col-sm-12">
-                <img src="demo/bussinessMan.jpg" alt="" class="w-100" />
+                <img src="demo/bussinessMan.jpg" alt="" class="w-100" data-aos="slide-right" data-aos-duration="1500"/>
             </div>
-            <div class="col-md-6 col-sm-12 right">
-                <h1 class="display-4 banner-header">
+            <div class="col-md-6 col-sm-12 right" data-aos="fade-left" data-aos-duration="1000">
+                <h1 class="display-4 banner-header" >
                     Be the best Aflicited Marketer you can be through us
                 </h1>
                 <br />
-                <p class="banner-header-description">
+                <p class="banner-header-description" >
                     Eiusmod aliquip ipsum est quis. Exercitation ex irure quis pariatur tempor eu. Culpa sint
                     adipisicing
                     irure
@@ -184,13 +189,14 @@
 
     <!--slidable latest products-->
     <div class="my">
-        <div class="">
+        <div class="" data-aos="fade" data-aos-duration="990" data-aos-easing="ease-in-cubic">
+            
             <h2 class="display-5 banner-header-lite mx-auto text-center">Latest Products</h2>
             <p class="latest-products-intro text-center">
                 Irure sunt amet cillum veniam deserunt nisi. Excepteur enim eu excepteur anim laborum velit
                 nulla esse esse sit. Sint laboris non enim cillum eu voluptate dolore reprehenderit.
             </p>
-
+        </div>
             <!--SLide-->
             <div style="padding: 50px 2%;">
 
@@ -451,14 +457,15 @@
 
 
 
-        </div>
+       
     </div>
 
     <!--Another Banner Section-->
     <div class="my">
         <div class="row inro-banner align-items-center reverse-sm">
             <div class="col-md-6 col-sm-12 left">
-                <h1 class="display-4 banner-header">
+                <div data-aos="fade-right" data-aos-duration="1200">
+                    <h1 class="display-4 banner-header">
                     Buy and sell products to reach larger audience through us
                 </h1>
                 <br />
@@ -472,18 +479,21 @@
                     cumque deserunt reiciendis corrupti ad est totam laudantium.
 
                 </p>
+               
+                
                 <br />
                 <button class="btn btn-outline-primary btn-lg p-7">Submit Items</button>
                 <button class="btn btn-primary btn-lg mx-3 p-7">Explore Store</button>
             </div>
-            <div class="col-md-6 col-sm-12">
+            </div>
+            <div class="col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="280">
                 <img src="demo/marketer.jpg" alt="" class="w-100" />
             </div>
         </div>
     </div>
 
     <!--How to become a AFM-->
-    <div class="pa-m-right bg-blue w-100">
+    <div class="pa-m-right bg-blue w-100" data-aos="slide-up" data-aos-duration="1450">
         <h2 class="display-6 banner-header-lite text-center">
             FAQ on how to be an affilicted marketer
         </h2>
@@ -491,14 +501,14 @@
         <!--One step to be an AFM-->
         <div class="row my-5">
             <div class="col-2" id="hw-am-1">
-                 <div class="tracer" id="line">
+                <div class="tracer" id="line">
                     |
                 </div>
                 <div class="bg-primary rounded-circle ratio-1x1 d-flex align-items-center justify-content-center text-white"
                     style="width: 50px;height: 50px; z-index: 1050 !important;position: absolute;">
                     1
                 </div>
-               
+
             </div>
             <div class="col-10 pad-center-sm">
                 <b class="banner-header-lite d-block" style="font-size: x-large !important;">
@@ -515,7 +525,7 @@
         <!--One step to be an AFM-->
         <div class="row my-5">
             <div class="col-2" id="hw-am-2">
-                
+
                 <div class="bg-primary rounded-circle ratio-1x1 d-flex align-items-center justify-content-center text-white"
                     style="width: 50px;height: 50px;z-index: 1050 !important;position: absolute;">
                     2
@@ -556,7 +566,7 @@
                     3
                 </div>
             </div>
-           
+
             <div class="col-10 pad-center-sm">
                 <b class="banner-header-lite d-block left" style="font-size: x-large !important;">
                     Uplode the goods you wish to sell on our website
@@ -578,11 +588,12 @@
         </h2>
         <div class="bg-blue-darker my-5">
             <div class="row align-items-stretch" style="height: 45px;">
-               
-                    <input class="bg-blue-darker form-control col-10 w-75 rounded-3" style="font-family: dm-sans;border: none;" type="text" placeholder="Enter email adress"/>
-               
-                    <button class="btn btn-primary col-2 w-25 rounded-3">Send</button>
-               
+
+                <input class="bg-blue-darker form-control col-10 w-75 rounded-3"
+                    style="font-family: dm-sans;border: none;" type="text" placeholder="Enter email adress" />
+
+                <button class="btn btn-primary col-2 w-25 rounded-3">Send</button>
+
             </div>
 
         </div>
@@ -605,50 +616,50 @@
                         If you would like <br>to receive occucational updates <br>from us
                     </p>
                 </div>
-                
+
                 <div class="col">
                     <h5 style="font-family: 'dm-sans';color: white;line-height: 20px;font-weight:300">
                         Company
                     </h5>
                     <br>
                     <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
-                       Product name
+                        Product name
                     </p>
                     <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
                         Product name
-                     </p>
-                     <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
+                    </p>
+                    <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
                         Product name
-                     </p>
-                    
+                    </p>
+
                 </div>
                 <div class="col">
-    
+
                     <h5 style="font-family: 'dm-sans';color: white;line-height: 20px;font-weight:300">
                         Company
                     </h5>
                     <br>
                     <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
-                       Product name
+                        Product name
                     </p>
                     <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
                         Product name
-                     </p>
-                     <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
+                    </p>
+                    <p style="font-family: 'roboto';color: white;line-height: 20px;font-weight:300">
                         Product name
-                     </p>
+                    </p>
                 </div>
             </div>
         </div>
-        
-        <hr  style="color: white;"/>
+
+        <hr style="color: white;" />
         <div style="padding: 50px 0px;">
             <p class="text-center text-white" style="font-family: 'roboto';font-size: larger;">
                 SOCIALS
             </p>
             <br>
             <div class="row social-icons">
-                <div class="col" >
+                <div class="col">
                     <img src="icons/facebook.svg" alt="" class="icon">
                 </div>
                 <div class="col">
@@ -670,19 +681,20 @@
             <br />
             <div class="copyright-text" style="margin-top: 60px;">
                 ©All Right Reserved By Aje Damilola
-            </span>
-        </div>
+                </span>
+            </div>
     </footer>
 
     <script>
-
-        var numberofTimesToDrawLine=2;
-        var height=0;
+        var numberofTimesToDrawLine = 2;
+        var height = 0;
         for (let i = 1; i <= numberofTimesToDrawLine; i++) {
-            var parent=document.getElementById("hw-am-"+i.toString()).clientHeight;
-            height+=(parent-(-50));
+            var parent = document.getElementById("hw-am-" + i.toString()).clientHeight;
+            height += (parent - (-50));
         }
-        document.getElementById("line").style.height=height+"px";
+        document.getElementById("line").style.height = height + "px";
+
+        AOS.init();
     </script>
 </body>
 
